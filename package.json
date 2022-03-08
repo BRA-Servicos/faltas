@@ -1,0 +1,13 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sass --watch assets/sass:assets/css"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}

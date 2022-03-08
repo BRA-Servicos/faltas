@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BRA - Aplicação de faltas</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container container-faltas">
+      <div class="header-link-back">
+        <a href="/index.html">
+          <img src="../assets/images/arrow.svg" alt="voltar para home">
+        </a>
+      </div>
+      <div class="colaborador">
+        <h2 class="name">João Henrique Ferreira de Almeida</h2>
+        <div class="infos">
+          <div class="content-info">
+            <span class="title">Lotação</span>
+            <p>100101</p>
+          </div>
+          <div class="content-info">
+            <span class="title">Escala</span>
+            <p>5x2</p>
+          </div>
+          <div class="content-info">
+            <span class="title">Setor</span>
+            <p>Escritorio BRA</p>
+          </div>
+          <div class="content-info">
+            <span class="title">Encarregado</span>
+            <p>Judith</p>
+          </div>
+        </div>
+      </div>
+      <div class="faltas">
+        <h2 class="faltas-title">Lançamento de falta</h2>
+        <form action="">
+          <select name="tipo de falta" id="tipo" required> 
+            <option default hidden value="">Selecione o tipo de falta</option>
+            <option value="Atestado">Atestado</option>
+            <option value="Falta Justificada">Falta justificada</option>
+            <option value="Falta Injustificada">Falta injustificada</option>
+          </select>
+          <select name="comprovante" id="comprovante" required>
+            <option default hidden value="">Comprovante</option>
+            <option value="atestado medico">Atestado médico</option>
+            <option value="Certidão nacimento">Certidão de nascimento</option>
+            <option value="Certidão casamento">Certidão de casamento</option>
+            <option value="Atestado de obito">Atestadod de obito</option>
+          </select>
+          <label class="data">
+            <span>06/03/2022</span>
+          </label>
+          <button type="submit" class="btn-default">Salvar</button>
+        </form> 
+      </div>
+    </div>
+  </div>
+</body>
+</html>

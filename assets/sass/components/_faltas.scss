@@ -1,0 +1,126 @@
+.container-faltas {
+  width: 80%;
+  height: 90vh;
+}
+
+.header-link-back {
+  margin-bottom: 30px;
+
+  > a {
+    padding: 20px;
+  }
+}
+
+.colaborador {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  > .name {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  > .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 60px;
+    flex-wrap: nowrap;
+
+    > .content-info {
+      > .title {
+        text-transform: uppercase;
+        color: $color-accent;
+      }
+      > p {
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+.faltas {
+  text-align: center;
+  > .faltas-title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    background-color: rgba($color-accent, 0.1);
+    padding: 15px;
+  }
+
+  > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    > select {
+      width: 287px;
+      padding: 10px;
+      border: none;
+      font-size: 18px;
+      background-color: $color-ui;
+      border-bottom: 3px solid #d6d6d6;
+      cursor: pointer;
+
+      > option {
+        text-transform: uppercase;
+      }
+    }
+
+    > .data {
+      text-transform: uppercase;
+      color: rgba($color-accent, 0.3);
+      font-size: 24px;
+      margin: 15px;
+    }
+
+    > .btn-default {
+      background-color: $color-accent;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 20px;
+      width: 20%;
+      margin: 0 auto 30px auto;
+
+      transition: background 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $hover-color;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container-faltas {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .colaborador {
+    > .name {
+      font-size: 20px;
+    }
+    > .infos {
+      display: block;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .faltas {
+    > .faltas-title {
+      font-size: 18px;
+    }
+    > form {
+      > .btn-default {
+        width: 100%;
+      }
+    }
+  }
+}

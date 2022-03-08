@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: $color-ui;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+form,
+label,
+input option,
+select {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  max-width: 100%;
+  height: 100vh;
+}
